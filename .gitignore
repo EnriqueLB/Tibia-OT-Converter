@@ -1,3 +1,6 @@
 env/
-__pychache__
-src/lib/__pychache__
+__pycache__/
+src/libs/__pychache__/
+src/DumpTibiaWiki/__pychache__/
+src/DumpTibiaWiki/*.json
+app.log

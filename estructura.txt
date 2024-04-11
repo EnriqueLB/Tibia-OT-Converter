@@ -1,3 +1,0 @@
-[100] void
-[3457] a shovel
-[35523] an exotic amulet
