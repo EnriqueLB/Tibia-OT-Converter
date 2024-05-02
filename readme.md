@@ -1,16 +1,13 @@
 **Tool that helps you update your server with the latest in tibia.**
 *things it can do*:
 
-* get the information of the latest items added to tibia by modifying items.xml, weapons.xml and movements.xml.
-* add missing outfits
-* add missing mounts
-1. <u>first identify whether the server uses client ID or server ID in the items.xml file.</u>
-   in my case, the server I am using uses client id, therefore, I have to get which is the client depending on the server id of each of my items, since tibia fandom uses server id.
-   there must be many ways to get these client ids and server ids, in my case, I used otcv8 and created this simple script that returns a json with the clientid and serverid
+- get the information of the latest items added to tibia by modifying items.xml, weapons.xml and movements.xml.
+- add missing outfits
+- add missing mounts
 
-   !Important
-   Attributes not contemplated since I found no way to obtain this information from the api
-      type
+```textile
+Attributes not contemplated since I found no way to obtain this information from the api:
+ type
 			blockprojectile
 			showattributes
 			healthGain
@@ -24,6 +21,11 @@
 			maxHitChance
 			rotateTo
 			wrapableTo
+```
+
+1. <u>first identify whether the server uses client ID or server ID in the items.xml file.</u>
+  in my case, the server I am using uses client id, therefore, I have to get which is the client depending on the server id of each of my items, since tibia fandom uses server id.
+  there must be many ways to get these client ids and server ids, in my case, I used otcv8 and created this simple script that returns a json with the clientid and serverid
 
 ```lua
 g_things.loadOtb('items.otb') -- path to the server otb (the one found with items.xml)
@@ -41,8 +43,7 @@ end
 g_resources.writeFileContents("DumpIDS.json", json.encode(lista, 1))
 ```
 
-    Estructura del archivo resultante:
-
+    Structure of the resulting file:
 
 ```json
 {
