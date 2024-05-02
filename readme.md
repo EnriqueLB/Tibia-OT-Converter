@@ -8,6 +8,23 @@
    in my case, the server I am using uses client id, therefore, I have to get which is the client depending on the server id of each of my items, since tibia fandom uses server id.
    there must be many ways to get these client ids and server ids, in my case, I used otcv8 and created this simple script that returns a json with the clientid and serverid
 
+   !Important
+   Attributes not contemplated since I found no way to obtain this information from the api
+      type
+			blockprojectile
+			showattributes
+			healthGain
+			healthTicks
+			manaGain
+			manaTicks
+			decayTo
+			showduration
+			transformDeEquipTo
+			charges
+			maxHitChance
+			rotateTo
+			wrapableTo
+
 ```lua
 g_things.loadOtb('items.otb') -- path to the server otb (the one found with items.xml)
 
